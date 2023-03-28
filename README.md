@@ -30,6 +30,16 @@ The project containes terraform code to create an infrastructure which deploys a
 
 Once terraform infrastructure is successfully deployed then navigate to EC2 > Load Balancer in your AWS account and use the DNS Name to hit the service.
 
+Example:
+
+```bash
+DNS Name : a422d453ed2df4033b6e1dxxxxxxxxx-0f30f75112798850.elb.us-east-1.amazonaws.com
+```
+```bash
+Output of the Helloworld service : Hello World helloworld-698bfbf8b6-qn2xm
+```
+
+
 ### Steps to create the Helloworld service infrastructure
 
 1) Clone the below github repo
