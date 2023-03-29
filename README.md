@@ -8,7 +8,7 @@ The project containes terraform code to create an infrastructure which deploys a
 1) Terraform v1.4.2
 2) Kubectl v1.26
 3) AWS Account [In my case I have used AcloudGuru]
-4) Docker [This is used to create a custom image, in my case I have created a custom image using Docker and hosted in public Docker repo]
+4) Docker [This is used to create a custom image, in my case I have created a custom image using Docker and hosted in public Docker repo and the image name is mentioned below]
 ```bash
   image name: dockerhubkarthik/hello
 ```
@@ -20,15 +20,24 @@ The project containes terraform code to create an infrastructure which deploys a
 ```bash
   aws configure
 ```
-3) Once the infrastructure is deployed create Kubernetes context, so that the context is pointing to your cluster. This is helpful to run kubectl commands.
+3) Once the infrastructure is deployed create Kubernetes context, so that the context is pointing to your cluster. This is helpful to run kubectl commands and verify your k8s deployment.
 
 ```bash
   aws eks --region {} update-kubeconfig --name {} --profile {}
 ```
 
-### URL/DNS name of the Helloworld service
+### URL/DNS name of the deployed Helloworld service
 
-Once terraform infrastructure is successfully deployed then navigate to EC2 > Load Balancer in your AWS account and use the DNS Name to hit the service.
+Once the AWS infrastructure is deployed successfully using terraform, then navigate to EC2 > Load Balancer in your AWS account and use the DNS Name to invoke the service.
+
+DNS Name : 
+```bash
+a422d453ed2df4033b6e1dxxxxxxxxx-0f30f75112798850.elb.us-east-1.amazonaws.com
+```
+Output of the Helloworld service : 
+```bash
+Hello World helloworld-698bfbf8b6-qn2xm
+```
 
 ### Steps to create the Helloworld service infrastructure
 
