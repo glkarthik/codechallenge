@@ -1,6 +1,6 @@
 provider "aws" {
   profile = "cloudguru"
-  region = "us-east-1"
+  region  = "us-east-1"
 }
 
 terraform {

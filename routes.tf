@@ -2,9 +2,9 @@ resource "aws_route_table" "codechallenge-route-public" {
   vpc_id = aws_vpc.codechallenge-vpc.id
 
   route {
-      cidr_block  = "0.0.0.0/0"
-      gateway_id  = aws_internet_gateway.codechallenge-igw.id
-    }
+    cidr_block = "0.0.0.0/0"
+    gateway_id = aws_internet_gateway.codechallenge-igw.id
+  }
 
 
   tags = {
