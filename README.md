@@ -74,4 +74,4 @@ variables.tf -- terraform file containing list of variables
 
 manifest.tf -- terraform file containing yaml files to deploy the Helloworld application on AWS EKS.
 
-Docker -- this folder contains files required to create docker image
+helloworldcode -- this folder contains files required to create docker image
