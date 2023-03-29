@@ -57,22 +57,22 @@ terraform apply
 
 ### Files overview
 
-provider.tf -- Terraform providers used within this respository
+provider.tf -- terraform providers used within this respository
 
-vpc -- vpc details. I have used 10.0.0.0/16 CIDR IP range. The range can be changed if you have already used 10.0.0.0/16 in your exisiting AWS account.
+vpc -- terraform file to create vpc. I have used 10.0.0.0/16 CIDR IP range. 
 
-igw.tf -- to create internet gateway in the infrastructure
+igw.tf -- terraform file to create internet gateway in the infrastructure
 
-subnets.tf -- to create the subnets in the infrastructure. Remember to change the cidr_block range if you use different one.
+subnets.tf -- terraform file to create the subnets in the infrastructure. 
 
-route.tf -- to create the route tables 
+route.tf -- terraform file to create the route tables 
 
-eks.tf -- contains code to deploy the eks cluster
+eks.tf -- terraform file contains code to deploy the eks cluster
 
-data.tf -- to retrieve the cluster data
+data.tf -- terraform file to retrieve the cluster data
 
-variables.tf -- contains list of variables used
+variables.tf -- terraform file containing list of variables
 
-manifest.tf -- contains yaml files to deploy the Helloworld application on AWS EKS.
+manifest.tf -- terraform file containing yaml files to deploy the Helloworld application on AWS EKS.
 
 Docker -- this folder contains files required to create docker image
