@@ -34,7 +34,7 @@ DNS Name :
 ```bash
 a422d453ed2df4033b6e1dxxxxxxxxx-0f30f75112798850.elb.us-east-1.amazonaws.com
 ```
-Output of the Helloworld service : 
+Output of the Helloworld service "Hello World {hostname of the kubernetes pod} : 
 ```bash
 Hello World helloworld-698bfbf8b6-qn2xm
 ```
